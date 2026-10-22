@@ -242,7 +242,7 @@ export function SIHCommandGlobe3D({ onInspectCaseStudy }: { onInspectCaseStudy: 
       // Top HUD overlay inside canvas
       ctx.fillStyle = "rgba(255,255,255,0.5)";
       ctx.font = "400 10.5px Lexend, sans-serif";
-      ctx.fillText("DRAG TO ROTATE 3D COMMAND SPHERE · 55+ CONCURRENT USERS (50 TRAINEES · 5 ADMINS)", 18, 24);
+      ctx.fillText("DRAG TO ROTATE · 55+ CONCURRENT USERS (50 TRAINEES · 5 ADMINS)", 18, 24);
 
       ctx.restore();
       raf = requestAnimationFrame(render);
@@ -520,10 +520,10 @@ export function Project3DVisualizer({ mode }: { mode: "ndrf" | "pdf" | "bank" })
       <canvas ref={canvasRef} className="project-3d-canvas" />
       <span className="project-3d-tag">
         {mode === "ndrf"
-          ? "3D LIVE TELEMETRY · 55+ NODES"
+          ? "MERN FULL-STACK · 55+ USERS"
           : mode === "pdf"
-            ? "3D NLP SCANNER · 500+ PAGES"
-            : "3D SQL LEDGER · 12 REST APIS"}
+            ? "PYTHON + NLP · 500+ PAGES"
+            : "PYTHON + SQL · 12 REST APIS"}
       </span>
     </div>
   );
@@ -723,7 +723,7 @@ export function SkillConstellation3D() {
           }}
         />
         <div className="skill-constellation-caption">
-          <span>Drag 3D Sphere · Click any skill chip on the right to inspect project context</span>
+          <span>Drag to rotate · Click any skill chip on the right to inspect project context</span>
           <strong>
             {selectedSkill.label} → {selectedSkill.project}
           </strong>
@@ -1000,7 +1000,7 @@ export function Biome3DArtPortal({
         <canvas ref={canvasRef} className="biome-portal-scene" />
         <div className="biome-portal-badge">
           <span>
-            INTERACTIVE 3D SEASONAL CANOPY · {SYLVA_VARIANT_META[activeVariant].label.toUpperCase()}
+            SEASONAL CANOPY · {SYLVA_VARIANT_META[activeVariant].label.toUpperCase()}
           </span>
           <small>{SYLVA_VARIANT_META[activeVariant].atmosphere}</small>
         </div>
@@ -1009,7 +1009,7 @@ export function Biome3DArtPortal({
           className="biome-jump-hero-btn"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
-          View in Full 3D Hero Stage ↑
+          Back to Top ↑
         </button>
       </div>
     </div>

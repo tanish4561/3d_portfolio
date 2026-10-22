@@ -120,7 +120,7 @@ export default function App() {
         <div className="hero-floating-hud">
           {/* Quick 1-Click 4-Biome Switcher right on the Hero */}
           <div className="hud-capsule hud-capsule--biomes">
-            <span className="hud-biome-title">3D Biome:</span>
+            <span className="hud-biome-title">Theme:</span>
             {(
               Object.entries(SYLVA_VARIANT_META) as Array<
                 [SylvaHeroVariant, (typeof SYLVA_VARIANT_META)[SylvaHeroVariant]]
@@ -143,22 +143,22 @@ export default function App() {
               onClick={() => setStudioOpen((prev) => !prev)}
             >
               <Sliders size={13} />
-              Studio
+              Customize
             </button>
           </div>
 
           <div className="hud-capsule hud-capsule--nav">
             <button type="button" onClick={() => scrollToSection("sih-2025")}>
-              SIH '25 3D
+              SIH 2025
             </button>
             <button type="button" onClick={() => scrollToSection("work")}>
-              3D Projects
+              Projects
             </button>
             <button type="button" onClick={() => scrollToSection("skills")}>
-              3D Skills
+              Skills
             </button>
             <button type="button" onClick={() => scrollToSection("biomes")}>
-              3D Worlds
+              Themes
             </button>
             <button
               type="button"
@@ -190,10 +190,10 @@ export default function App() {
 
           <nav className="sticky-nav-links" aria-label="Portfolio sections">
             <a href="#intro">Overview</a>
-            <a href="#sih-2025">SIH '25 3D</a>
-            <a href="#work">3D Projects (3)</a>
-            <a href="#skills">3D Skills</a>
-            <a href="#biomes">3D Worlds</a>
+            <a href="#sih-2025">SIH 2025</a>
+            <a href="#work">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#biomes">Themes</a>
             <a href="#achievements">Credentials</a>
             <a href="#contact">Contact</a>
           </nav>
@@ -205,7 +205,7 @@ export default function App() {
               onClick={() => setStudioOpen(true)}
             >
               <Sliders size={14} />
-              <span>Hero Studio</span>
+              <span>Theme</span>
             </button>
             <button
               type="button"
@@ -219,7 +219,7 @@ export default function App() {
         </div>
       </header>
 
-      {/* ── SECTION 1: CONCISE VISUAL IDENTITY & 3D TILT STATS BENTO ───── */}
+      {/* ── SECTION 1: CONCISE VISUAL IDENTITY & STATS BENTO ───── */}
       <section className="portfolio-section" id="intro">
         <div className="portfolio-container">
           <div className="visual-intro-bento">
@@ -228,7 +228,7 @@ export default function App() {
                 <span className="live-status-pill">
                   <i /> B.Tech CSE @ Thapar Institute (2023–2027)
                 </span>
-                <span className="biome-active-pill">{currentBiomeMeta.label} Biome Active</span>
+                <span className="biome-active-pill">{currentBiomeMeta.label} Theme</span>
               </div>
               <h1 className="intro-hero-heading">{PERSONAL_IDENTITY.homepageIntro.headline}</h1>
               <p className="intro-concise-bio">
@@ -242,7 +242,7 @@ export default function App() {
                   className="btn-paper"
                   onClick={() => scrollToSection("work")}
                 >
-                  Explore 3D Projects <ArrowUpRight size={15} />
+                  View Projects <ArrowUpRight size={15} />
                 </button>
                 <button
                   type="button"
@@ -292,7 +292,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* ── SECTION 2: SIH 2025 WINNER — INTERACTIVE 3D COMMAND GLOBE ───── */}
+      {/* ── SECTION 2: SIH 2025 WINNER ───── */}
       <section className="portfolio-section portfolio-section--alt" id="sih-2025">
         <div className="portfolio-container">
           <div className="section-header-row">
@@ -302,7 +302,7 @@ export default function App() {
                 {SIH_FEATURED_ACHIEVEMENT.date}
               </span>
               <h2 className="section-display-title">
-                Smart India Hackathon 2025 — <em>Interactive 3D Command Hub</em>
+                Smart India Hackathon 2025 — <em>National Hardware Winner</em>
               </h2>
             </div>
             <div className="sih-badge-pill-box">
@@ -351,16 +351,16 @@ export default function App() {
         </div>
       </section>
 
-      {/* ── SECTION 3: 3D PROJECT SHOWCASE CARDS ────────────────────────── */}
+      {/* ── SECTION 3: PROJECT SHOWCASE CARDS ────────────────────────── */}
       <section className="portfolio-section" id="work">
         <div className="portfolio-container">
           <div className="section-header-row">
             <div>
               <span className="section-eyebrow">
-                <Layers size={14} /> Interactive 3D Project Gallery
+                <Layers size={14} /> Featured Engineering Work
               </span>
               <h2 className="section-display-title">
-                Engineered Systems — <em>Live 3D Previews</em>
+                Selected <em>Projects</em>
               </h2>
             </div>
 
@@ -449,21 +449,21 @@ export default function App() {
         </div>
       </section>
 
-      {/* ── SECTION 4: INTERACTIVE 3D SKILL CONSTELLATION ───────────────── */}
+      {/* ── SECTION 4: SKILL CONSTELLATION ───────────────── */}
       <section className="portfolio-section portfolio-section--alt" id="skills">
         <div className="portfolio-container">
           <div className="section-header-row">
             <div>
               <span className="section-eyebrow">
-                <Cpu size={14} /> 3D Orbital Skill Graph
+                <Cpu size={14} /> Technical Stack &amp; Core Competencies
               </span>
               <h2 className="section-display-title">
-                Technical Stack — <em>Interactive 3D Constellation</em>
+                Languages, Frameworks &amp; <em>Cloud</em>
               </h2>
             </div>
             <p className="section-header-lede">
-              Drag the 3D sphere or click any technology chip to see how it connects to Tanish’s
-              built systems.
+              Click any technology chip to inspect how it connects to Tanish’s shipped projects and
+              engineering coursework.
             </p>
           </div>
 
@@ -471,21 +471,21 @@ export default function App() {
         </div>
       </section>
 
-      {/* ── SECTION 5: INTERACTIVE 3D BOTANICAL BIOME PORTAL ────────────── */}
+      {/* ── SECTION 5: SEASONAL BOTANICAL THEMES ────────────── */}
       <section className="portfolio-section" id="biomes">
         <div className="portfolio-container">
           <div className="section-header-row">
             <div>
               <span className="section-eyebrow">
-                <Sparkles size={14} /> Generative Three.js Art & Biomes
+                <Sparkles size={14} /> Seasonal Atmospheres
               </span>
               <h2 className="section-display-title">
-                Four Seasonal 3D Worlds — <em>Sakura, Maple, Sequoia & Moss</em>
+                Four Botanical Themes — <em>Sakura, Maple, Sequoia &amp; Moss</em>
               </h2>
             </div>
             <p className="section-header-lede">
-              Switch between all 4 procedural Three.js worlds. Changing the biome here also updates
-              the main hero stage while keeping Tanish’s portfolio data live.
+              Switch between all four seasonal environments. Selecting a theme here also updates
+              the main hero stage.
             </p>
           </div>
 
@@ -676,7 +676,7 @@ export default function App() {
                   className="btn-scroll-top"
                   onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                 >
-                  Back to 3D Hero ↑
+                  Back to Top ↑
                 </button>
               </div>
             </div>
@@ -685,7 +685,7 @@ export default function App() {
           <footer className="portfolio-footer">
             <div className="footer-meta-row">
               <span>© {new Date().getFullYear()} Tanish Singla · B.Tech CSE, TIET Patiala</span>
-              <span>Interactive 3D Portfolio · Full-Stack, Backend &amp; AI Systems</span>
+              <span>Full-Stack, Backend &amp; AI Systems</span>
               <span>{PERSONAL_IDENTITY.email}</span>
             </div>
             <div className="footer-ghost-word" aria-hidden="true">
@@ -706,9 +706,9 @@ export default function App() {
             <div className="studio-drawer-header">
               <div>
                 <span className="studio-drawer-eyebrow">
-                  <Sparkles size={12} /> 3D Portfolio Theme Studio
+                  <Sparkles size={12} /> Theme Studio
                 </span>
-                <h3>Customize Biome &amp; Typography</h3>
+                <h3>Customize Theme &amp; Typography</h3>
               </div>
               <button
                 type="button"
@@ -726,7 +726,7 @@ export default function App() {
                 className={`studio-tab-btn ${studioTab === "biome" ? "is-active" : ""}`}
                 onClick={() => setStudioTab("biome")}
               >
-                <Layers size={13} /> 3D Biome
+                <Layers size={13} /> Atmosphere
               </button>
               <button
                 type="button"
@@ -741,8 +741,7 @@ export default function App() {
               {studioTab === "biome" && (
                 <div className="studio-pane">
                   <p className="studio-pane-intro">
-                    Switch between the four interactive 3D botanical environments for Tanish
-                    Singla’s portfolio stage.
+                    Switch between the four seasonal environments for Tanish Singla’s portfolio.
                   </p>
                   <div className="studio-variant-grid">
                     {(
