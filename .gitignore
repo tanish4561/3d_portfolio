@@ -1,0 +1,10 @@
+node_modules/
+dist/
+prod-bundle/
+bin/
+uploads/
+deploy-live.sh
+.npm/
+tsconfig.tsbuildinfo
+.DS_Store
+*.log
