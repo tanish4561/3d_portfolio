@@ -321,7 +321,7 @@ export function SIHCommandGlobe3D({ onInspectCaseStudy }: { onInspectCaseStudy: 
               ⚡ Simulate Instant Report (-60% Eval Effort)
             </button>
             <button type="button" className="sih-case-btn" onClick={onInspectCaseStudy}>
-              Inspect 10-Point Case Study →
+              Inspect Case Study →
             </button>
           </div>
         </div>

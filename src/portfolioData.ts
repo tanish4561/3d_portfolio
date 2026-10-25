@@ -245,14 +245,14 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
       "Building this platform showed me how much backend data modeling affects frontend simplicity. Once we clearly separated trainee session state, course progress, and assessment scoring rules on the backend, building the analytics views and instant reports became much more straightforward.",
     caseStudyQuestions: [
       {
-        question: "1. What problem was I trying to solve?",
+        question: "1. What problem were we trying to solve?",
         answer:
-          "Manual evaluation and fragmented tracking during chemical disaster response training created delays in trainee feedback and heavy administrative work for instructors.",
+          "Training new NDRF personnel for chemical disasters is difficult and expensive—recreating hazardous zones and equipping every trainee with specialized gear carries massive overhead. Guided by the Chief of NDRF during the hackathon, we built a VR chemical-disaster simulation and training platform that teaches trainees how to contain chemical leaks, seal the perimeter, evacuate civilians, and perform full decontamination of the zone, civilians, and responders.",
       },
       {
         question: "2. Who was the intended user?",
         answer:
-          "Two distinct user groups: emergency-response trainees (50+ users) completing coursework and assessments, and training administrators/instructors (5 users) overseeing cohorts and reviewing analytics.",
+          "Two distinct user groups: emergency-response trainees (50+ users) completing training modules and assessments, and NDRF instructors/administrators (5 users) overseeing cohort readiness—continuously evaluated live by senior NDRF officers during the hackathon.",
       },
       {
         question: "3. Why was the problem worth solving?",
@@ -260,39 +260,34 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
           "Reducing the time spent on manual grading and administrative coordination lets instructors focus on actual training quality while giving trainees immediate visibility into their assessment performance.",
       },
       {
-        question: "4. What did I personally contribute?",
+        question: "4. What did I personally contribute to the team?",
         answer:
-          "I served as Full-Stack Developer on the team, building the six core web modules in the MERN stack, implementing role-based authentication, and developing the automated assessment and performance-reporting workflows.",
+          "While our team built the Unreal Engine VR simulation and AI scenario logic, I owned the Frontend and Backend of the web platform—engineering the low-latency API matrix and web routers to ingest high-frequency real-time telemetry directly from the VR simulation, implementing secure multi-user session authentication, and building automated calculation modules that cut manual administrative evaluation time by 60%.",
       },
       {
-        question: "5. How did the application work at a high level?",
+        question: "5. How did the system work at a high level?",
         answer:
-          "Administrators configure courses, manage trainee accounts, and monitor cohort analytics. Trainees log in through role-protected routes, complete training modules and assessments in concurrent sessions, and receive instant performance reports calculated automatically on submission.",
+          "Trainees run chemical-containment, perimeter-sealing, evacuation, and decontamination drills inside the Unreal Engine VR simulation. As they act, the simulation streams real-time telemetry to our Node.js/Express backend, which scores protocol compliance automatically and updates the React dashboard live for NDRF instructors and trainees.",
       },
       {
-        question: "6. Which technologies did I use, and why were they relevant?",
+        question: "6. What technical challenges were involved?",
         answer:
-          "The MERN stack (MongoDB, Express.js, React.js, Node.js). React handled the interactive dashboard and analytics views for trainees and admins; Node.js and Express provided the REST API and authentication middleware; MongoDB stored user profiles, course structures, session logs, and assessment results.",
+          "As a team, our biggest challenge was translating strict real-world NDRF field protocols into a serious, realistic training tool rather than a game—modeling custom 3D assets from scratch and working directly with NDRF officials on physical nuances (for example, heavy gases like bromine settle near the floor, requiring trainees to take detector readings below knee level rather than standing height). On my end (Frontend & Backend), the core challenge was ingesting and streaming live telemetry across both the trainee and instructor dashboards with zero packet/data loss while keeping multi-user sessions strictly isolated and secure.",
       },
       {
-        question: "7. What technical challenges were involved?",
+        question: "7. What measurable outcomes did the project achieve?",
         answer:
-          "Handling 55+ concurrent active users during live training sessions, enforcing strict role-based permissions between trainees and admins, and computing assessment analytics immediately upon submission.",
+          "Winner of Smart India Hackathon 2025 Hardware Edition (top 1% of 40,000+ teams); evaluated live by senior NDRF officers; supported 55+ active users (50+ trainees, 5 admins); reduced manual evaluation effort by 60%; reduced administrative overhead by ~40%.",
       },
       {
-        question: "8. What measurable outcomes did the project achieve?",
+        question: "8. What did we learn?",
         answer:
-          "Resume-reported outcomes: Winner of Smart India Hackathon 2025 Hardware Edition (top 1% of 40,000+ teams); supported 55+ active users (50+ trainees, 5 admins); reduced manual evaluation effort by 60%; reduced administrative overhead by ~40%.",
+          "How to design real-time, multi-role full-stack pipelines that bridge an Unreal Engine VR simulation with a live web dashboard under tight national hackathon deadlines.",
       },
       {
-        question: "9. What did I learn?",
+        question: "9. What would we improve or investigate next?",
         answer:
-          "How to design multi-role full-stack workflows under hackathon deadlines and how automating backend evaluation logic directly improves operational usability.",
-      },
-      {
-        question: "10. What would I improve or investigate next?",
-        answer:
-          "Adding offline-first session syncing for field environments with unstable connectivity, granular audit logs for instructor overrides, and automated load testing for larger trainee cohorts.",
+          "With only 5 days during the hackathon, we prioritized delivering one chemical disaster scenario with complete physical and procedural accuracy rather than ten incomplete chemicals. Next, we would expand the simulation library to cover multiple chemical agents and diverse hazard environments.",
       },
     ],
     missingInfoToConfirm: [

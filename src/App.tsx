@@ -438,7 +438,7 @@ export default function App() {
                           setSelectedProject(project);
                         }}
                       >
-                        Inspect 10-Point Case Study <ArrowUpRight size={14} />
+                        Inspect Case Study <ArrowUpRight size={14} />
                       </button>
                     </div>
                   </div>
@@ -938,22 +938,6 @@ export default function App() {
                     <p>{qa.answer}</p>
                   </div>
                 ))}
-              </div>
-
-              <div className="modal-shader-box">
-                <div className="modal-shader-head">
-                  <span>
-                    <Terminal size={13} /> Details to Confirm With Tanish (Not Invented)
-                  </span>
-                  <code>Factual Integrity Checklist</code>
-                </div>
-                <div style={{ padding: "16px 20px" }}>
-                  <ul className="modal-arch-list">
-                    {selectedProject.missingInfoToConfirm.map((item) => (
-                      <li key={item}>{item}</li>
-                    ))}
-                  </ul>
-                </div>
               </div>
             </div>
           </div>
