@@ -157,19 +157,19 @@ export const PERSONAL_IDENTITY = {
 export const SIH_FEATURED_ACHIEVEMENT = {
   competition: "Smart India Hackathon 2025 (Hardware Edition)",
   result: "Winner · Selected among the Top 1% of 40,000+ Teams Nationwide",
-  role: "Full-Stack Developer",
+  role: "Frontend & Backend Developer",
   project: "NDRF Chemical Disaster Training Dashboard",
   date: "December 2025",
   contextParagraphs: [
-    "Smart India Hackathon (SIH) is a nationwide engineering competition in India where student teams tackle problem statements submitted by public-sector organizations and ministries. In the 2025 cycle, my team competed in the Hardware Edition and was selected among the top 1% of more than 40,000 participating teams across the country, ultimately winning our problem category in December 2025.",
-    "Our team built the NDRF Chemical Disaster Training Dashboard — a web-based training and evaluation platform designed to support chemical disaster response training for the National Disaster Response Force (NDRF). In high-stakes emergency preparedness, instructors have to manage dozens of trainees, deliver structured training modules, and evaluate performance accurately. Manual scoring and paper-based tracking slow down feedback and create administrative overhead for instructors.",
-    "While the overall win belonged to our entire team across hardware and software tracks, my individual responsibility was serving as a Full-Stack Developer on the web platform. Using the MERN stack, I worked on six core functional modules covering user management, course delivery, progress tracking, analytics, and automated assessment reporting.",
-    "Specifically, the platform was built to support 55+ active users in concurrent training sessions, with role-based authentication separating permissions for 50+ trainees and five administrators. According to our project metrics, automating the assessment and evaluation pipeline generated instant performance reports, cutting manual evaluation effort by 60% and reducing overall administrative overhead by roughly 40%.",
+    "Guided by the Chief of NDRF and continuously evaluated live by senior NDRF officers during the 5-day Smart India Hackathon 2025 Hardware Edition, our team built a VR chemical-disaster training simulation and real-time evaluation platform for the National Disaster Response Force (NDRF), winning among the top 1% of 40,000+ teams nationwide.",
+    "Because recreating hazardous chemical zones and equipping every new trainee with specialized gear carries massive overhead, our team built an Unreal Engine VR simulation that teaches personnel how to contain chemical leaks, seal the perimeter, evacuate civilians, and perform full decontamination of the zone, civilians, and responders.",
+    "While my teammates built the Unreal Engine VR simulation and AI scenario logic, I owned the Frontend and Backend of the web platform—engineering the low-latency API matrix and web routers to ingest real-time telemetry directly from the VR simulation with zero data loss, implementing secure multi-user session authentication, and building automated calculation modules.",
+    "The platform supported 55+ active users in concurrent sessions (50+ trainees and 5 administrators) and generated instant protocol-compliance reports, cutting manual administrative evaluation time by 60% and reducing coordination overhead by roughly 40%.",
   ],
   whatItDemonstrated: [
-    "Translating operational requirements (distinct trainee and instructor workflows) into role-based authentication and access control.",
-    "Building full-stack modules that remain responsive when 50+ trainees access courses and submit assessments concurrently.",
-    "Collaborating inside a multi-disciplinary hackathon team where the web dashboard had to align with the broader Hardware Edition solution.",
+    "Ingesting high-frequency real-time telemetry from an Unreal Engine VR simulation into a Node.js/Express and React dashboard with zero packet loss.",
+    "Enforcing strict multi-user session security and role-based isolation across trainee and instructor views for 55+ concurrent sessions.",
+    "Translating real-world NDRF field rules (such as floor-level sensor checks for heavy gases like bromine) into automated scoring logic.",
   ],
 };
 
@@ -208,14 +208,14 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     number: "01",
     title: "NDRF Chemical Disaster Training Dashboard",
     subtitle:
-      "Role-based training delivery, concurrent session management, and automated assessment reporting for emergency response personnel",
+      "Real-time VR telemetry ingestion, multi-user session security, and automated protocol evaluation for NDRF chemical-disaster training",
     contextBadge: "Smart India Hackathon 2025 Winner (Hardware Edition)",
     category: "fullstack",
-    categoryLabel: "Full-Stack Web Platform · MERN",
+    categoryLabel: "Full-Stack Web Platform · MERN + VR Telemetry",
     date: "December 2025",
-    role: "Full-Stack Developer",
+    role: "Frontend & Backend Developer",
     image: "/landing-pages/inner-green-assets/card-ethos.jpg",
-    technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "Role-Based Auth", "REST APIs"],
+    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "VR Telemetry API", "Role-Based Auth"],
     metrics: [
       { label: "Concurrent Users", value: "55+ Active Sessions" },
       { label: "Role Separation", value: "50+ Trainees · 5 Admins" },
@@ -223,26 +223,26 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
       { label: "Admin Overhead", value: "~40% Reduction" },
     ],
     problemSummary:
-      "Coordinating chemical disaster response training involves managing groups of trainees, delivering structured coursework, and grading readiness assessments. When instructors rely on manual evaluation and fragmented tracking sheets, grading takes too long and trainees do not get immediate feedback on where they made mistakes.",
+      "Training new NDRF personnel for chemical disasters is difficult and expensive—recreating hazardous zones and equipping every trainee with specialized gear carries massive overhead. Guided by the Chief of NDRF during the hackathon, we built a VR chemical-disaster simulation and real-time evaluation platform.",
     whyItMatters:
-      "In disaster-response training, instructors need clear visibility into individual and cohort readiness without spending hours manually compiling scores after each session.",
+      "Combining realistic VR disaster drills with automated real-time telemetry grading eliminates costly physical setup and manual evaluation delays while teaching strict field procedures.",
     whatItDoes:
-      "The NDRF Chemical Disaster Training Dashboard centralizes training administration and trainee evaluation into one web application. It provides six functional modules: user management, course delivery, assessment execution, instant performance reporting, progress tracking, and instructor analytics.",
+      "Trainees execute chemical containment, perimeter sealing, civilian evacuation, and decontamination inside the Unreal Engine VR simulation while our MERN platform ingests real-time telemetry, enforces multi-user role security, and streams live evaluation reports to both trainee and instructor dashboards.",
     myContribution:
-      "As a Full-Stack Developer on the team, I developed the six core application modules using the MERN stack, implemented role-based authentication for trainees and administrators, built the automated assessment scoring and report-generation workflows, and structured the backend to handle 55+ active users across concurrent training sessions.",
+      "While our team built the Unreal Engine VR simulation runtime, I owned the Frontend and Backend—engineering the low-latency API matrix and web routers to ingest high-frequency telemetry endpoints with zero data loss, implementing secure multi-user session authentication, and building automated calculation modules that cut manual evaluation times by 60%.",
     technicalChallenges: [
-      "Designing clean role-based access boundaries so 50+ trainees could only access assigned training modules and assessments while 5 administrators had full control over cohorts, analytics, and evaluation records.",
-      "Structuring assessment submissions and state updates so 55+ concurrent users could complete training sessions simultaneously without session collisions or delayed report generation.",
-      "Connecting six distinct functional modules (user management, analytics, course delivery, progress tracking, assessments, and reporting) around a consistent data model.",
+      "Translating strict NDRF field protocols into a realistic training tool (such as floor-level sensor checks for heavy gases like bromine) while modeling custom 3D assets from scratch as a team.",
+      "Ingesting and streaming high-frequency real-time telemetry from the VR simulation to both trainee and instructor dashboards with zero data loss.",
+      "Maintaining strict multi-user session security and isolation across 55+ concurrent sessions (50+ trainees and 5 administrators).",
     ],
     verifiedResults: [
-      "Supported 55+ active users participating in concurrent training sessions.",
-      "Implemented role-based authentication serving 50+ trainees and 5 administrators.",
-      "Generated instant performance reports upon assessment completion, reducing manual evaluation effort by 60%.",
-      "Automated recurring training and reporting workflows, reducing administrative overhead by approximately 40%.",
+      "Won Smart India Hackathon 2025 Hardware Edition (top 1% of 40,000+ teams), evaluated live by senior NDRF officers.",
+      "Supported 55+ active users (50+ trainees and 5 administrators) across secure role-protected dashboards.",
+      "Ingested real-time VR simulation telemetry and generated automated evaluation reports, reducing manual grading time by 60%.",
+      "Automated training and reporting workflows, cutting administrative overhead by approximately 40%.",
     ],
     whatILearned:
-      "Building this platform showed me how much backend data modeling affects frontend simplicity. Once we clearly separated trainee session state, course progress, and assessment scoring rules on the backend, building the analytics views and instant reports became much more straightforward.",
+      "How to engineer low-latency full-stack telemetry pipelines that bridge an Unreal Engine VR simulation with a multi-role web dashboard under tight national hackathon deadlines.",
     caseStudyQuestions: [
       {
         question: "1. What problem were we trying to solve?",
@@ -302,41 +302,40 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     number: "02",
     title: "AI PDF Parser",
     subtitle:
-      "Containerized Python and NLP pipeline for extracting structured headings from 500+ page PDF documents in under 10 seconds",
+      "Containerized Python & NLP microservice for dynamic persona-weighted token scoring, semantic re-ranking, and sub-10s synthesis across multi-page PDF corpora",
     contextBadge: "Adobe Hackathon 2025 · Top 2,000 of 150,000+ Participants",
     category: "ai-nlp",
-    categoryLabel: "Document Processing · Python, NLP & Docker",
+    categoryLabel: "AI & Data Pipeline · Python, NLP & Docker",
     date: "February 2025",
-    role: "Developer (Python, NLP & Containerization)",
+    role: "Core AI & Data Pipeline Architect",
     image: "/landing-pages/inner-green-assets/card-ecostove.jpg",
-    technologies: ["Python", "Natural Language Processing (NLP)", "Docker", "Document Parsing"],
+    technologies: ["Python", "NLP Frameworks", "Docker", "Semantic Re-Ranking", "Context Partitioning"],
     metrics: [
-      { label: "Document Scale", value: "500+ Pages / File" },
-      { label: "Heading Accuracy", value: "92% (100+ Test Docs)" },
-      { label: "Processing Speed", value: "< 10s (down from 3–5m)" },
+      { label: "Document Scale", value: "500+ Pages / Batch" },
+      { label: "Precision Tier", value: "92% (100+ Test Docs)" },
+      { label: "Pipeline Latency", value: "< 10s (down from 3–5m)" },
       { label: "Adobe Hackathon", value: "Top 2,000 / 150,000+" },
     ],
     problemSummary:
-      "PDF files are built for visual page rendering rather than semantic structure. In long documents — such as technical manuals, reports, or textbooks exceeding 500 pages — headings are rarely tagged consistently, making manual outlining or naive rule-based extraction slow and error-prone.",
+      "The extraction bottleneck of performing localized information retrieval and structured synthesis across multi-gigabyte, un-indexed document corpora where standard keyword extraction fails under dynamic runtime persona constraints.",
     whyItMatters:
-      "Downstream workflows like document indexing, search, summarization, and automated navigation depend on accurately identifying section boundaries and heading hierarchies first.",
+      "Naive lexical search (like BM25) lacks semantic awareness, while dense retrieval suffers from high I/O overhead and latency spikes when scanning massive un-chunked document collections.",
     whatItDoes:
-      "The AI PDF Parser ingests large PDF documents (500+ pages per file), applies natural language processing to identify and extract document headings, and runs inside a Docker container so the extraction pipeline behaves identically across machines.",
+      "Ingests a query string and runtime persona parameter alongside a directory of multi-page PDFs, executes structural layout parsing, dynamically re-weights token importance against persona vectors, routes ranked semantic chunks into the context window, and renders structured markdown inside a Docker container.",
     myContribution:
-      "I worked on the Python document-processing and NLP heading-extraction pipeline, evaluated extraction accuracy across a test dataset of more than 100 documents, optimized execution so files processed in under 10 seconds, and packaged the runtime environment with Docker.",
+      "As Core AI & Data Pipeline Architect, I designed the Python data ingestion framework, developed the customized token scoring and semantic re-ranking algorithms, built the dynamic context-window partitioning logic, optimized execution to under 10 seconds, and containerized the microservice with Docker.",
     technicalChallenges: [
-      "Handling layout and formatting inconsistency across 100+ diverse PDF documents where font sizes, numbering styles, and whitespace vary widely.",
-      "Processing documents with more than 500 pages without running into memory spikes or multi-minute execution times.",
-      "Ensuring reproducible dependencies and consistent execution across development and evaluation environments using Docker.",
+      "Dynamic Token-Weighting Shift: Building an algorithmic matrix capable of completely changing keyword priority scores instantly when the runtime persona changed.",
+      "Memory Footprint & I/O Optimization: Preventing out-of-memory (OOM) kernel panics when parsing and tokenizing hundreds of text pages concurrently.",
+      "Latency Mitigation: Optimizing string parsing, keyword matching, and matrix sorting algorithms to keep total pipeline latency under 10 seconds.",
     ],
     verifiedResults: [
-      "Processed PDF documents containing more than 500 pages per file.",
-      "Achieved 92% heading extraction accuracy across a dataset of 100+ test documents.",
-      "Reduced per-document analysis time from approximately 3–5 minutes to under 10 seconds.",
-      "Associated with Adobe Hackathon 2025, ranking among the top 2,000 teams out of 150,000+ participants (resume-reported).",
+      "Achieved a 92% precision tier for structural heading and semantic information extraction across 100+ test documents.",
+      "Reduced high-volume data ingestion and synthesis latency from 3–5 minutes down to sub-10 seconds per multi-file batch.",
+      "Placed in the Top 2,000 teams out of 150,000+ national engineering participants in Adobe Hackathon 2025.",
     ],
     whatILearned:
-      "Working with real-world PDFs taught me that clean input data is rare. Combining text-level NLP signals with structural heuristics — and profiling where the pipeline spends time on 500-page files — matters just as much as the model logic itself.",
+      "How to manage context-window allocation and chunking inside a memory-constrained Python runtime, balance semantic precision against raw token-ranking speed, and enforce deterministic execution via Docker.",
     caseStudyQuestions: [
       {
         question: "1. What problem was I trying to solve?",
@@ -568,22 +567,22 @@ export const ACHIEVEMENTS_LIST: AchievementItem[] = [
   {
     id: "sih-2025",
     title: "Winner — Smart India Hackathon 2025 (Hardware Edition)",
-    subtitle: "Full-Stack Developer · NDRF Chemical Disaster Training Dashboard",
+    subtitle: "Frontend & Backend Developer · NDRF VR Chemical Disaster Training Platform",
     date: "December 2025",
     metricBadge: "Top 1% of 40,000+ Teams",
     summary:
-      "Selected as a Full-Stack Developer on the winning team among the top 1% of more than 40,000 teams across India. Built the six-module web training and assessment platform supporting 55+ concurrent users.",
+      "Won among the top 1% of 40,000+ teams across India, evaluated live by senior NDRF officers. Engineered the low-latency MERN backend and React dashboards ingesting real-time telemetry from our Unreal Engine VR simulation across 55+ concurrent sessions.",
     relatedProjectId: "ndrf-training-dashboard",
     relatedProjectLabel: "Inspect NDRF Dashboard Case Study",
   },
   {
     id: "adobe-2025",
     title: "Top 2,000 Teams — Adobe Hackathon 2025",
-    subtitle: "AI-Based Document Processing · AI PDF Parser",
+    subtitle: "Core AI & Data Pipeline Architect · AI PDF Parser",
     date: "February 2025",
     metricBadge: "Top 2,000 of 150,000+ Participants",
     summary:
-      "Ranked among the top 2,000 teams out of more than 150,000 participants (resume-reported) for developing a containerized Python and NLP pipeline that extracts structure from 500+ page PDFs in under 10 seconds.",
+      "Placed in the top 2,000 teams out of 150,000+ national participants by architecting a Dockerized Python & NLP microservice for dynamic persona-weighted token scoring, semantic re-ranking, and sub-10s multi-PDF synthesis at 92% precision.",
     relatedProjectId: "ai-pdf-parser",
     relatedProjectLabel: "Inspect AI PDF Parser Case Study",
   },

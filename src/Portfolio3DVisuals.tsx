@@ -70,12 +70,12 @@ export function Tilt3DCard({
    2. SIH 2025 Winner — Interactive 3D Disaster Command Orbital Globe
    ────────────────────────────────────────────────────────────────────────── */
 const SIH_MODULES = [
-  "01 · Trainee Auth (50+)",
-  "02 · Admin Control (5)",
-  "03 · Scenario Simulation",
-  "04 · Live Telemetry (55+)",
-  "05 · Instant Eval (-60%)",
-  "06 · Workflow Auto (-40%)",
+  "01 · VR Telemetry Matrix",
+  "02 · Chemical Containment",
+  "03 · Perimeter & Evacuation",
+  "04 · Decontamination Protocol",
+  "05 · Secure Multi-User Auth (55+)",
+  "06 · Auto Evaluation (-60%)",
 ];
 
 export function SIHCommandGlobe3D({ onInspectCaseStudy }: { onInspectCaseStudy: () => void }) {
@@ -520,10 +520,10 @@ export function Project3DVisualizer({ mode }: { mode: "ndrf" | "pdf" | "bank" })
       <canvas ref={canvasRef} className="project-3d-canvas" />
       <span className="project-3d-tag">
         {mode === "ndrf"
-          ? "MERN FULL-STACK · 55+ USERS"
+          ? "MERN + VR TELEMETRY · 55+ USERS"
           : mode === "pdf"
-            ? "PYTHON + NLP · 500+ PAGES"
-            : "PYTHON + SQL · 12 REST APIS"}
+            ? "PYTHON + NLP · <10S SYNTHESIS"
+            : "NODE.JS + MYSQL · 12 REST APIS"}
       </span>
     </div>
   );

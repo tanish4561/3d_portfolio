@@ -232,9 +232,10 @@ export default function App() {
               </div>
               <h1 className="intro-hero-heading">{PERSONAL_IDENTITY.homepageIntro.headline}</h1>
               <p className="intro-concise-bio">
-                Building role-based <strong>MERN platforms</strong>, containerized{" "}
-                <strong>Python NLP pipelines</strong>, and <strong>RESTful SQL backends</strong>{" "}
-                with measurable speed and reliability.
+                Engineering <strong>real-time VR telemetry web platforms (MERN)</strong>,{" "}
+                <strong>persona-driven Python &amp; NLP data pipelines</strong>, and{" "}
+                <strong>relational SQL backends</strong> under production and national hackathon
+                constraints.
               </p>
               <div className="vision-strip-cta-group">
                 <button
@@ -263,12 +264,14 @@ export default function App() {
                 {
                   code: "SIH '25",
                   title: "Hardware Edition Winner",
-                  detail: "Top 1% of 40,000+ teams nationwide · NDRF Training Dashboard",
+                  detail:
+                    "Top 1% of 40,000+ teams · Real-time MERN + Unreal VR telemetry platform for NDRF",
                 },
                 {
                   code: "ADOBE '25",
                   title: "Top 2,000 of 150,000+",
-                  detail: "AI PDF Parser · 92% heading accuracy on 500+ page docs in <10s",
+                  detail:
+                    "Core AI & Data Pipeline Architect · Dynamic NLP token re-ranking in <10s (92% precision)",
                 },
                 {
                   code: "300+ DSA",
@@ -327,22 +330,29 @@ export default function App() {
               </div>
 
               <Tilt3DCard className="sih-concise-summary-card" intensity={6}>
-                <div className="sih-summary-tag">Team Win vs. My Individual Engineering</div>
-                <h3>{SIH_FEATURED_ACHIEVEMENT.project} (MERN)</h3>
+                <div className="sih-summary-tag">
+                  VR Simulation + Live Telemetry · Evaluated by Senior NDRF Officers
+                </div>
+                <h3>{SIH_FEATURED_ACHIEVEMENT.project} (MERN + Unreal VR)</h3>
                 <ul className="sih-concise-bullets">
                   <li>
-                    <strong>Team Achievement:</strong> Won SIH 2025 Hardware Edition (Dec 2025) among
-                    the top 1% of 40,000+ teams across India.
+                    <strong>The Problem &amp; VR Solution:</strong> Guided by the Chief of NDRF, our
+                    team built a VR chemical-disaster simulation that trains new personnel in leak
+                    containment, perimeter sealing, civilian evacuation, and decontamination without
+                    expensive physical gear overhead.
                   </li>
                   <li>
-                    <strong>What I Built:</strong> Full-Stack Developer on the 6-module MERN training
-                    dashboard with role-based auth for <strong>50+ trainees</strong> and{" "}
-                    <strong>5 administrators</strong>.
+                    <strong>My Frontend &amp; Backend Ownership:</strong> While teammates built the
+                    Unreal Engine VR runtime, I engineered the low-latency API matrix and web routers
+                    to ingest high-frequency VR telemetry with zero data loss and built secure
+                    multi-user session auth for <strong>50+ trainees</strong> and{" "}
+                    <strong>5 admins</strong>.
                   </li>
                   <li>
-                    <strong>Measured Impact:</strong> Instant performance reports cut manual
-                    evaluation by <strong>60%</strong> and automated workflows reduced admin
-                    overhead by <strong>~40%</strong> across <strong>55+ concurrent users</strong>.
+                    <strong>Measured Impact:</strong> Automated protocol scoring and live dashboard
+                    reporting cut manual administrative evaluation time by <strong>60%</strong> and
+                    reduced coordination overhead by <strong>~40%</strong> across{" "}
+                    <strong>55+ concurrent sessions</strong>.
                   </li>
                 </ul>
               </Tilt3DCard>
