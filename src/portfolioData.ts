@@ -137,7 +137,8 @@ export const PERSONAL_IDENTITY = {
   institution: "Thapar Institute of Engineering and Technology, Patiala, India",
   degree: "Bachelor of Technology in Computer Science and Engineering",
   graduation: "Expected June 2027 (August 2023 – June 2027)",
-  email: "tsinglabe23@thapar.edu",
+  email: "tanishsingla777@gmail.com",
+  collegeEmail: "tsingla_be23@thapar.edu",
   homepageIntro: {
     headline: "Hi, I’m Tanish Singla — a Computer Science undergraduate and full-stack developer.",
     paragraphs: [
@@ -738,9 +739,6 @@ export const MISSING_INFO_CHECKLIST = [
     category: "Profile & Resume Links",
     items: [
       "Actual GitHub profile URL (e.g., https://github.com/...)",
-      "Actual LinkedIn profile URL (e.g., https://linkedin.com/in/...)",
-      "Actual LeetCode & GeeksforGeeks profile URLs",
-      "Direct PDF file or link for 'View / Download Resume'",
     ],
   },
   {

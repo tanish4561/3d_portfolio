@@ -9,6 +9,8 @@ import {
   Code2,
   Copy,
   Cpu,
+  Download,
+  Link2,
   FileText,
   GraduationCap,
   Layers,
@@ -50,6 +52,12 @@ const OpticalSandbox = React.lazy(() =>
 );
 
 const DEFAULT_HERO_PROPS = VISION_PERSONAS[0].recommendedProps;
+const PROFILE_LINKS = [
+  { name: "LinkedIn", detail: "Connect professionally", url: "https://www.linkedin.com/in/tanish-singla-389739352/" },
+  { name: "Codolio", detail: "Coding profile", url: "https://codolio.com/profile/tanish_singla" },
+  { name: "LeetCode", detail: "Problem solving", url: "https://leetcode.com/u/tanish_singla/" },
+  { name: "GeeksforGeeks", detail: "Practice & activity", url: "https://www.geeksforgeeks.org/profile/tanish777?tab=activity" },
+];
 
 export default function App() {
   const [heroConfig, setHeroConfig] = useState(DEFAULT_HERO_PROPS);
@@ -195,6 +203,7 @@ export default function App() {
             <a href="#skills">Skills</a>
             <a href="#biomes">Themes</a>
             <a href="#achievements">Credentials</a>
+            <a href="#profiles">Links</a>
             <a href="#contact">Contact</a>
           </nav>
 
@@ -594,6 +603,25 @@ export default function App() {
         </div>
       </section>
 
+      <section className="portfolio-section portfolio-section--alt" id="profiles">
+        <div className="portfolio-container">
+          <div className="profile-links-header">
+            <span className="section-eyebrow"><Link2 size={14} /> Find me online</span>
+            <h2 className="section-display-title">Beyond the <em>portfolio.</em></h2>
+            <p>Connect, explore my profiles, and see what I’m working on.</p>
+          </div>
+          <div className="profile-links-grid">
+            {PROFILE_LINKS.map((profile, index) => (
+              <a className="profile-link-card" key={profile.name} href={profile.url} target="_blank" rel="noopener noreferrer" aria-label={`${profile.name} (opens in a new tab)`}>
+                <span className="profile-link-index">0{index + 1} / PROFILE</span>
+                <span className="profile-link-name">{profile.name}<ArrowUpRight size={20} aria-hidden="true" /></span>
+                <span className="profile-link-detail">{profile.detail}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── SECTION 8: CONTACT & RESUME DOCK ────────────────────────────── */}
       <section className="portfolio-section contact-section" id="contact">
         <div className="portfolio-container">
@@ -613,12 +641,18 @@ export default function App() {
 
               <div className="contact-direct-box">
                 <div className="contact-direct-row">
-                  <span>Email (Verified)</span>
+                  <span>Personal email</span>
                   <button type="button" className="copy-email-btn" onClick={handleCopyEmail}>
                     <Mail size={13} />
                     <strong>{PERSONAL_IDENTITY.email}</strong>
                     {emailCopied ? <Check size={13} /> : <Copy size={13} />}
                   </button>
+                </div>
+                <div className="contact-direct-row">
+                  <span>College email</span>
+                  <a className="contact-college-email" href={`mailto:${PERSONAL_IDENTITY.collegeEmail}`}>
+                    <Mail size={13} /> <strong>{PERSONAL_IDENTITY.collegeEmail}</strong>
+                  </a>
                 </div>
                 <div className="contact-direct-row">
                   <span>Campus</span>
@@ -641,6 +675,9 @@ export default function App() {
                 >
                   <FileText size={14} /> Resume Snapshot
                 </button>
+                <a href="/Tanish-Singla-Resume.pdf" download="Tanish-Singla-Resume.pdf" className="btn-ghost-moss resume-download-link">
+                  <Download size={14} /> Download Resume
+                </a>
                 <button
                   type="button"
                   className="btn-ghost-moss"
@@ -985,8 +1022,11 @@ export default function App() {
               <h2 className="modal-title">Tanish Singla</h2>
               <p className="modal-subtitle">
                 {EDUCATION_DATA.degree} · {EDUCATION_DATA.institution} ({EDUCATION_DATA.duration}) ·{" "}
-                {PERSONAL_IDENTITY.email}
+                Personal: {PERSONAL_IDENTITY.email} · College: {PERSONAL_IDENTITY.collegeEmail}
               </p>
+              <a className="btn-submit-inquiry resume-download-link" href="/Tanish-Singla-Resume.pdf" download="Tanish-Singla-Resume.pdf">
+                <Download size={15} /> Download Resume PDF
+              </a>
 
               <div className="modal-two-col">
                 <div>
