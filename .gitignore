@@ -3,8 +3,23 @@ dist/
 prod-bundle/
 bin/
 uploads/
-deploy-live.sh
 .npm/
 tsconfig.tsbuildinfo
 .DS_Store
 *.log
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+*.local
+*.secret
+*.secrets
+.surge-mail.json
+
+# Editor and OS metadata
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+Thumbs.db
